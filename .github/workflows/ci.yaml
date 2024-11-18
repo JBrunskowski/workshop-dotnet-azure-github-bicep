@@ -43,7 +43,7 @@ jobs:
 
   dev:
     needs: build_and_test
-    uses: ./.github/workflows/step-deploy.yml
+    uses: ./.github/workflows/step-deploy.yaml
     with:
       env: dev
       artifact_name: dotnet-artifact
@@ -58,7 +58,7 @@ jobs:
 
   prod:
     needs: dev
-    uses: ./.github/workflows/step-deploy.yml
+    uses: ./.github/workflows/step-deploy.yaml
     with:
       env: prod
       artifact_name: dotnet-artifact
