@@ -52,9 +52,9 @@ jobs:
       app_service_slot_name: slot
     # Note: use GH Environment Secrets if using a Pro/Enterprise version of GH
     secrets:
-      azure_client_id: ${{ secrets.DEV_AZURE_CLIENT_ID }}
-      azure_subscription_id: ${{ secrets.DEV_AZURE_SUBSCRIPTION_ID }}
-      azure_tenant_id: ${{ secrets.DEV_AZURE_TENANT_ID }}
+      azure_client_id: '85097de8-fc1a-4534-baf6-e7197a156aad' #${{ secrets.DEV_AZURE_CLIENT_ID }}
+      azure_subscription_id: 'b1fd17ce-b6b6-4f5b-a4bd-1a0d368a7c70' #${{ secrets.DEV_AZURE_SUBSCRIPTION_ID }}
+      azure_tenant_id: 'e6659408-ed09-47eb-ac69-765774337d3f' #${{ secrets.DEV_AZURE_TENANT_ID }}
 
   prod:
     needs: dev
